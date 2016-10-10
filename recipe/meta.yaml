@@ -34,8 +34,7 @@ test:
 about:
   home: http://bitbucket.org/shimizukawa/sphinxjp.themecore
   license: MIT
-  # FIXME: add license file once added by upstream
-  #license_file: LICENSE.txt
+  license_file: src/LICENSE.txt
   summary: 'A sphinx theme plugin support extension. #sphinxjp'
 
 extra:
