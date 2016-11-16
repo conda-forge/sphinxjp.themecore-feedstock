@@ -33,7 +33,6 @@ conda search sphinxjp.themecore --channel conda-forge
 ```
 
 
-
 About conda-forge
 =================
 
