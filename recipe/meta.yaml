@@ -12,23 +12,25 @@ source:
 
 build:
   noarch: python
-  number: 2
-  script: python -m pip install --no-deps --ignore-installed .
+  number: 3
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
     - pip
-    - python
+    - python {{ python_min }}
     - setuptools
     - docutils
     - sphinx
 
   run:
-    - python
+    - python >={{ python_min }}
     - docutils
     - sphinx
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - sphinxjp
     - sphinxjp.themecore
